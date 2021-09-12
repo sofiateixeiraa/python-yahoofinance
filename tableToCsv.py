@@ -16,10 +16,7 @@ def delete_multiple_element(list_object, indices):
 list_of_indeces=[1,2,3,5,6]
 for tr in soup.find_all("tr"):
     data = []
-    table=[]
-    aux=[]
-    i=0
-    j=0
+    table = []
     for th in tr.find_all('th'):
         data.append(th.text)  
     if data:
